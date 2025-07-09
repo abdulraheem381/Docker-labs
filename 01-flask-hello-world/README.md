@@ -45,7 +45,7 @@ Once the container is running, open your browser and visit:
 You should see the following output:
 
 Hello from Flask in Docker!
-'''bash
+
 ---
 🎯 Learning Outcomes
 Understanding the structure of a basic Flask web app
