@@ -1,4 +1,4 @@
-# 🐳 docker-labs-abdul
+# 🐳 docker-labs
 
 A collection of 10 Docker mini-projects built by Mw to master containerization from beginner to advanced levels.
 
