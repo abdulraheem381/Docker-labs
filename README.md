@@ -1,4 +1,4 @@
-# 🐳 docker-labs-abdul
+# 🐳 docker-labs
 
 A collection of hands-on Docker mini-projects built by Me. Each lab demonstrates practical use of Docker in modern DevOps workflows.
 
@@ -24,7 +24,7 @@ A collection of hands-on Docker mini-projects built by Me. Each lab demonstrates
 Clone the repo and navigate to any project:
 
 ```bash
-git clone https://github.com/yourusername/docker-labs-abdul.git
-cd docker-labs-abdul/01-flask-app
+git clone https://github.com/yourusername/docker-labs.git
+cd docker-labs/01-flask-app
 docker build -t flask-app .
 docker run -p 5000:5000 flask-app
