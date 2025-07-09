@@ -1,28 +1,3 @@
-You're absolutely right, Abdul — thanks for pointing that out. The README you have now is **raw YAML pasted into a `.md` file**, which causes:
-
-* **Poor formatting** on GitHub
-* No syntax highlighting
-* Hard to read as a typical `README.md`
-
----
-
-## ✅ What You *Should* Do Instead
-
-Keep **two files**:
-
-### ✅ 1. A standard `README.md` (for GitHub display)
-
-Formatted with headings, code blocks, links, etc. — looks clean.
-
-### ✅ 2. A `README.yaml` or `meta.yaml` (optional, for automation)
-
-If you want to parse it programmatically or feed it into a dashboard/tool later.
-
----
-
-## ✅ Correct `README.md` (Use This for GitHub)
-
-```markdown
 # 🐍 Project 01 – Flask Hello World (Dockerized)
 
 This is a minimal **Flask web application** containerized using **Docker**. It returns a simple "Hello from Flask in Docker!" message when accessed.
@@ -39,59 +14,50 @@ This is a minimal **Flask web application** containerized using **Docker**. It r
 
 ## 📁 Folder Structure
 
-```
 
 01-flask-hello-world/
 ├── app.py
 ├── requirements.txt
 └── Dockerfile
 
-````
+---
+
 
 ---
 
-## 🚀 How to Run
+
+---
+
+## 🚀 How to Run the Project
+
+Follow the steps below to build and run the container locally:
 
 ```bash
-# Step 1: Clone the repo
+# Step 1: Clone the repository
 git clone https://github.com/YOUR_USERNAME/docker-labs-abdul.git
 cd docker-labs-abdul/01-flask-hello-world
 
 # Step 2: Build the Docker image
 docker build -t flask-hello .
 
-# Step 3: Run the container
+# Step 3: Run the Docker container
 docker run -p 5000:5000 flask-hello
-````
 
-Then open [http://localhost:5000](http://localhost:5000) in your browser.
+✅ Access the Application
+Once the container is running, open your browser and visit:
 
-Expected Output:
+👉 http://localhost:5000
 
-```
+You should see the following output:
+
 Hello from Flask in Docker!
-```
 
 ---
+🎯 Learning Outcomes
+Understanding the structure of a basic Flask web app
 
-## ✅ What You Learn
+Writing a clean and functional Dockerfile
 
-* Writing a basic Dockerfile
-* Exposing and binding container ports
-* Building and running Docker containers
-* Flask basics (optional)
+Building and tagging custom Docker images
 
----
-
-## ✍️ Author
-
-**Abdul Raheem**
-DevOps Engineer 
-
----
-
-## 📜 License
-
-MIT
-
-
+Exposing container ports to the host machine
