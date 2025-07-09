@@ -22,12 +22,6 @@ This is a minimal **Flask web application** containerized using **Docker**. It r
 
 ---
 
-
----
-
-
----
-
 ## 🚀 How to Run the Project
 
 Follow the steps below to build and run the container locally:
@@ -51,7 +45,7 @@ Once the container is running, open your browser and visit:
 You should see the following output:
 
 Hello from Flask in Docker!
-
+'''bash
 ---
 🎯 Learning Outcomes
 Understanding the structure of a basic Flask web app
