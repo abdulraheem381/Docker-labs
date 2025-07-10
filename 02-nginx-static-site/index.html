@@ -2,27 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Docker Static Site</title>
+  <title>🚀 Dockerized Static Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      background-color: #0f172a;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #e2e8f0;
-      padding-top: 100px;
+    /* Reset + Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
     h1 {
       font-size: 3rem;
       color: #38bdf8;
+      margin-bottom: 1rem;
     }
+
     p {
-      color: #94a3b8;
       font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin-bottom: 2rem;
     }
+
+    .badge {
+      background-color: #1e40af;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
   <h1>🚀 Deployed with Docker + NGINX</h1>
-  <p>This static site is running inside a container using NGINX.</p>
+  <p>This is a modern static HTML page served inside a Docker container using the official NGINX image.  
+     Fully portable, lightweight, and blazing fast.</p>
+  <div class="badge">docker-labs-abdul • Project 02</div>
+
+  <footer>
+    <p>By <a href="https://abdulraheem.hashnode.dev" target="_blank">Abdul Raheem</a> • DevOps Diaries</p>
+  </footer>
 </body>
 </html>
