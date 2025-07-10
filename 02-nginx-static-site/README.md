@@ -21,12 +21,12 @@ This project demonstrates how to deploy a personal landing page or simple "Under
 ### 1️⃣ Build the Docker Image
 
 ```bash
-cd docker-labs-abdul/02-nginx-static-site
+cd Docker-labs/02-nginx-static-site
 docker build -t nginx-static .
 
 docker run -p 80:80 nginx-static
 
-'''bash
+
 
 🌍 Access the Site
 Open your browser and visit:
