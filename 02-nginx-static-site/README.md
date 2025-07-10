@@ -1,48 +1,39 @@
-project:
-  id: 02
-  name: NGINX Static Site
-  path: 02-nginx-static-site
-  description: |
-    A fully containerized static HTML website served using the official NGINX image and Docker.
-    Demonstrates how to deploy a static landing page inside a containerized web server.
-  level: beginner
+# 🌐 Project 02 – NGINX Static Site (Dockerized)
 
-tech_stack:
-  - HTML
-  - CSS
-  - NGINX (alpine)
-  - Docker
+A fully containerized static HTML website served using the official **NGINX Docker image**.  
+This project demonstrates how to deploy a personal landing page or simple "Under Construction" site using Docker.
 
-structure:
-  - index.html  # The static website page
-  - Dockerfile  # Image build instructions
+---
 
-instructions:
-  steps:
-    - step: Navigate to the project folder
-      command: cd docker-labs-abdul/02-nginx-static-site
+## 📦 Tech Stack
 
-    - step: Build the Docker image
-      command: docker build -t nginx-static .
+- HTML + CSS
+- NGINX (Alpine base image)
+- Docker
 
-    - step: Run the Docker container
-      command: docker run -p 80:80 nginx-static
-
-  output_url: http://localhost:80
-  expected_result: |
-    Displays a modern, styled HTML landing page with a dark theme.
-    Includes a heading "🚀 Deployed with Docker + NGINX" and a brief message.
-
-learnings:
-  - Using official NGINX image to serve static files
-  - Writing a Dockerfile to copy HTML into containers
-  - Port mapping using docker run
-  - Minimal production-ready static deployments
-
-use_cases:
-  - Personal landing pages
-  - Under construction pages
-  - Static UI demos
+---
 
 
-license: MIT
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Build the Docker Image
+
+```bash
+cd docker-labs-abdul/02-nginx-static-site
+docker build -t nginx-static .
+
+docker run -p 80:80 nginx-static
+
+'''bash
+
+🌍 Access the Site
+Open your browser and visit:
+👉 http://localhost:80
+
+You’ll see a modern dark-themed HTML page that says:
+
+“🚀 Deployed with Docker + NGINX”
+
+
