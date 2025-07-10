@@ -21,7 +21,7 @@ The application returns a clean, styled HTML response served at `http://localhos
 ### 1️⃣ Build the Docker Image
 
 ```bash
-cd docker-labs-abdul/03-nodejs-docker-app
+cd Docker-labs/03-nodejs-docker-app
 docker build -t node-app .
 docker run -p 3000:3000 node-app
 
