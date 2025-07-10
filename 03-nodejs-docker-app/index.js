@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
     <body>
       <h1>🚀 Node.js App Running in Docker</h1>
       <p>This is a simple Express.js application containerized using Docker.</p>
-      <div class="badge">docker-labs-abdul • Project 03</div>
+      <div class="badge">Docker-labs • Project 03</div>
     </body>
     </html>
   `);
