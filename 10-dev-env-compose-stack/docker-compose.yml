@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  app:
+    build: ./app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      POSTGRES_HOST: db
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: devopsdb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+
+volumes:
+  db-data:
