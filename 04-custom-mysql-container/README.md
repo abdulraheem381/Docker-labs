@@ -1,6 +1,5 @@
 
 
-```markdown
 # 🗃️ Project 04 – MySQL Container with Preloaded DB (Dockerized)
 
 This project demonstrates how to run a **MySQL database container** that automatically loads a custom `.sql` script at startup using Docker Compose.  
@@ -16,17 +15,6 @@ This setup is perfect for quickly provisioning dev/test databases in CI/CD pipel
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-04-custom-mysql-container/
-├── init.sql               # SQL script that auto-runs at container start
-└── docker-compose.yml     # Defines MySQL container config
-
-````
-
----
 
 ## 🚀 Getting Started
 
@@ -98,12 +86,4 @@ Defined in `docker-compose.yml`:
 * Local DB containers for developers
 
 ---
-
-
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
-```
 
